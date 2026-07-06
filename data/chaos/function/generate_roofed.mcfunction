@@ -5,4 +5,4 @@ tellraw @s {"text":"//replace ##logs air", "clickEvent":{"action":"run_command",
 tellraw @s {"text":"//replace ##leaves air", "clickEvent":{"action":"run_command","value":"//replace ##leaves air"}}
 tellraw @s {"text":"//replace lava air", "clickEvent":{"action":"run_command","value":"//replace lava air"}}
 tellraw @s {"text":"//forest darkoak 5", "clickEvent":{"action":"run_command","value":"//forest darkoak 5"}}
-tellraw @s {"text":"//setbiome dark_forest", "clickEvent":{"action":"run_command","value":"//setbiome forest"}}
+tellraw @s {"text":"//setbiome forest", "clickEvent":{"action":"run_command","value":"//setbiome forest"}}
