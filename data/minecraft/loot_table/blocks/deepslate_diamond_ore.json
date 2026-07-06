@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond"
+        }
+      ],
+      "functions": [],
+      "conditions": []
+    }
+  ],
+  "functions": []
+}
