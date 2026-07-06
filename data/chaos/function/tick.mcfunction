@@ -34,3 +34,10 @@ execute if score 0 end_cooldown matches 1 run function chaos:scoreboard
 #winner text display
 execute positioned 4.5 304.5 0.5 unless entity @a[distance=..0.8] run kill @e[type=text_display]
 execute positioned 4.5 304.5 0.5 as @a[distance=..0.8] unless entity @e[type=text_display, distance=..3] run summon minecraft:text_display 4.5 306.5 0.5 {Rotation:[90f, 0f], text:'{"text":"Winner", "color":"gold"}', billboard:horizontal}
+
+#coordinate display
+execute as @a store result score @s coords_x run data get entity @s Pos[0]
+execute as @a store result score @s coords_y run data get entity @s Pos[1]
+execute as @a store result score @s coords_z run data get entity @s Pos[2]
+
+execute as @a run title @s actionbar ["",{"text":"X","color":"red"},": ",{"score":{"name":"@s","objective":"coords_x"},"color":"red"},", ",{"text":"Y","color":"green"},": ",{"score":{"name":"@s","objective":"coords_y"},"color":"green"},", ",{"text":"Z","color":"blue"},": ",{"score":{"name":"@s","objective":"coords_z"},"color":"blue"}]
