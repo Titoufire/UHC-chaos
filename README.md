@@ -25,6 +25,11 @@ But remember, this is UHC chaos. Nothing can go to plan. Therefore, every 5 minu
 
 
 
+For instructions on how to setup the game, read instruction.txt
+
+
+
+
 
 ### Precisions
 
