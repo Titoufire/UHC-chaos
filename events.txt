@@ -28,5 +28,3 @@
 -Love story [Love] | Are you loved by someone ? -> binds the lives of two players. they will win or die together.
 -It's raining cats and dogs [cats_and_dogs] | SAVE 'EM !!! -> cats and dogs rain
 -House | Here's your very own structure. -> spawns a random structure (out of 14) on every player
-
-Done: 30/30
