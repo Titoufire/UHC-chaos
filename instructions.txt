@@ -5,9 +5,8 @@ to start the game execute the chaos:game/start_game function        (/function c
 execute the modifiers function to edit the game modifiers (click)   (/function chaos:modifiers)
 to revive a player, give him the "revive" tag
 to generate a roofted, open the modifiers then click on the 'Generate roofted forest' message,
-then click on each command message
+then click on each command message (requires world edit)
 
 made for Minecraft 1.21.1 may not work in other versions
 
-Property of Titoufire26, do not distribute.
 Thanks to Xorg78 for the help he offered
