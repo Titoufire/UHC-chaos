@@ -1,0 +1,11 @@
+execute if score 0 current_event matches 11 run function chaos:events/tick/on_fire
+execute if score 0 current_event matches 22 run function chaos:events/tick/slime_rain
+execute if score 0 current_event matches 28 run function chaos:events/tick/cats_and_dogs
+execute if score 0 current_event matches 12 run function chaos:events/tick/run
+execute if score 0 current_event matches 4 run function chaos:events/tick/poison
+execute if score 0 current_event matches 2 run function chaos:events/tick/gold_rush
+execute if score 0 current_event matches 8 run function chaos:events/tick/dessicated
+execute if score 0 current_event matches 7 run function chaos:events/tick/midas
+execute if score 0 current_event matches 20 run function chaos:events/tick/swap
+execute if score 0 current_event matches 27 run function chaos:events/tick/chism
+execute if score 0 current_event matches 30 run function chaos:events/tick/cactus

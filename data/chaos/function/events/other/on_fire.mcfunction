@@ -1,0 +1,1 @@
+execute as @a[scores={fire_time=1..}, tag=play] at @s run setblock ~ ~ ~ water
