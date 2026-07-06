@@ -1,5 +1,5 @@
 worldborder set 3 1200
-execute as @a[tag=play] at @s run spreadplayers 0 0 1 10 false @s
+execute as @a[tag=play] at @s run spreadplayers 0 0 1 10 under 190 false @s
 effect give @a[tag=play] instant_health 10
 tellraw @a {"text":"Final Heal !!!","italic":true,"color":"dark_red"}
 title @a[tag=play] subtitle {"text":"Everyone get to the center","color":"yellow"}
