@@ -57,7 +57,7 @@ execute if score 0 win matches -1 if score 0 no_win matches 0 run tag @a[tag=pla
 execute if score 0 win matches -1 if score 0 no_win matches 0 run scoreboard players set 0 game 0
 execute if score 0 win matches -1 if score 0 no_win matches 0 run function chaos:game/end_game
 
-#equality edge case -> clear items (inv and grd), weapons, no armor, a shield, first to kill the other.
+#tie edge case -> clear items (inv and grd), weapons, no armor, a shield, first to kill the other.
 execute if score 0 win matches -2 run kill @e[type=item]
 execute if score 0 win matches -2 run kill @e[type=arrow]
 execute if score 0 win matches -2 run kill @e[type=wither]
@@ -68,7 +68,7 @@ execute if score 0 win matches -2 run gamemode survival @a[scores={death_time=..
 execute if score 0 win matches -2 run fill -14 150 -14 14 150 14 reinforced_deepslate
 execute if score 0 win matches -2 run worldborder center 0 0
 execute if score 0 win matches -2 run worldborder set 15
-execute if score 0 win matches -2 as @e[tag=Border] at @s run spreadplayers ~ ~ 0 7 false @a[scores={death_time=..1}]
+execute if score 0 win matches -2 as @e[tag=Border] at @s run spreadplayers ~ ~ 0 7 under 190 false @a[scores={death_time=..1}]
 execute if score 0 win matches -2 run give @a[scores={death_time=..1}] iron_sword
 execute if score 0 win matches -2 run give @a[scores={death_time=..1}] oak_planks 5
 execute if score 0 win matches -2 run give @a[scores={death_time=..1}] iron_axe
