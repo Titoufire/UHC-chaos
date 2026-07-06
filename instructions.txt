@@ -1,0 +1,13 @@
+to not be affected by the lobby force gamemode to adventure: get the "lobby_immune" tag.
+to not be included in a game when it starts: get the "non_player" tag.
+to remove the end sequence, set [no_win] to 1 for player "0"        (re-activate is 0)
+to start the game execute the chaos:game/start_game function        (/function chaos:game/start_game)
+execute the modifiers function to edit the game modifiers (click)   (/function chaos:modifiers)
+to revive a player, give him the "revive" tag
+to generate a roofted, open the modifiers then click on the 'Generate roofted forest' message,
+then click on each command message
+
+made for Minecraft 1.21.1 may not work in other versions
+
+Property of Titoufire26, do not distribute.
+Thanks to Xorg78 for the help he offered
