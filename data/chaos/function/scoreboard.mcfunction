@@ -164,3 +164,8 @@ scoreboard objectives add death_time dummy
 
 #fire time (event: On_Fire)
 scoreboard objectives add fire_time dummy
+
+#coordinate display
+scoreboard objectives add coords_x dummy
+scoreboard objectives add coords_y dummy
+scoreboard objectives add coords_z dummy
