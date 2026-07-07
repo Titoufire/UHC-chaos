@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:test",
+  "feature": "minecraft:test_diamond_block",
   "placement": [
     {
       "type": "minecraft:count",
