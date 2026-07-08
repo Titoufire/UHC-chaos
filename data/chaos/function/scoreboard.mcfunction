@@ -3,7 +3,7 @@ scoreboard objectives add main_board dummy ["",{"text":"/!\\","bold":true,"under
 scoreboard objectives setdisplay sidebar main_board
 #version
 scoreboard players set 0 main_board 0
-scoreboard players display name 0 main_board {"text":"           (v1.4)", "color":"gray", "italic":true}
+scoreboard players display name 0 main_board {"text":"           (v1.5)", "color":"gray", "italic":true}
 scoreboard players display numberformat 0 main_board blank
 #game will start soon
 scoreboard players set -1 main_board -1
