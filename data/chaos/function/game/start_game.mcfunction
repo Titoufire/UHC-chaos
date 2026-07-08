@@ -45,3 +45,4 @@ recipe give @a[tag=play] minecraft:carrot_on_a_stick
 scoreboard players set @a death_time 0
 #iron man activated
 execute if score 0 iron_man matches 1 run tellraw @a {"text":"Iron Man activated", "color":"aqua"}
+scoreboard players set @a[tag=play] dmg_taken 0
