@@ -2,7 +2,7 @@
   "feature": "minecraft:ore_gold_buried",
   "placement": [
     {
-      "count": 13,
+      "count": 10,
       "type": "minecraft:count"
     },
     {
