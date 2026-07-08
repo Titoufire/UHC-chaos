@@ -18,8 +18,11 @@ execute if score 0 time_min matches 40 if score 0 time_tick matches 0 if score 0
 #death detection
 execute as @a[scores={deaths=1..}] if score 0 time_min matches ..9 run scoreboard players set @s deaths 0
 execute as @a[scores={deaths=1..}] if score 0 time_min matches 10.. run tag @s add dead
-execute as @a[tag=dead] if score 0 time_min matches 10.. run playsound minecraft:entity.wither.death master @a
-execute as @a[tag=dead] if score 0 time_min matches 10.. run playsound minecraft:entity.lightning_bolt.thunder master @a
+execute as @a[scores={deaths=1..}] if score 0 time_min matches 10.. run playsound minecraft:entity.wither.death master @a
+execute as @a[scores={deaths=1..}] if score 0 time_min matches 10.. run playsound minecraft:entity.lightning_bolt.thunder master @a
+execute as @a[scores={deaths=1..}] if score 0 time_min matches 10.. store result score @s death_x run data get entity @s Pos[0]
+execute as @a[scores={deaths=1..}] if score 0 time_min matches 10.. store result score @s death_y run data get entity @s Pos[1]
+execute as @a[scores={deaths=1..}] if score 0 time_min matches 10.. store result score @s death_z run data get entity @s Pos[2]
 execute as @a[tag=dead] run scoreboard players set @s deaths 0
 execute as @a[tag=dead] run tag @s remove play
 execute as @a[tag=dead] run tag @s remove Love
