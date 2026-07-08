@@ -8,5 +8,6 @@ to generate a roofted, open the modifiers then click on the 'Generate roofted fo
 then click on each command message (requires world edit)
 
 made for Minecraft 1.21.1 may not work in other versions.
+This datapack has no dependencies.
 
 Thanks to Xorg78 for the help he offered
