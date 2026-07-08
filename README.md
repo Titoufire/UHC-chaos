@@ -28,7 +28,7 @@ The ores you mine will drop already smelted, along experience bottles. There is 
 
 There will be two full heals at 10 and 20 minutes.
 
-You can use the trigger cave command (/trigger cave) to teleport in a cave yourself directly below you.
+You can use the trigger cave command (/trigger cave) to teleport yourself in a cave directly below you.
 
 ### Blades
 
