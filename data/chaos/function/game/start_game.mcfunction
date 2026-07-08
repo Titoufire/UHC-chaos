@@ -18,7 +18,7 @@ effect give @a[tag=play] resistance 1200 0 true
 difficulty easy
 scoreboard players set 0 main_board 62
 scoreboard players set -1 main_board 61
-scoreboard players display name 0 main_board {"text":"          (v1.4)", "color":"gray", "italic":true}
+scoreboard players display name 0 main_board {"text":"          (v1.5)", "color":"gray", "italic":true}
 scoreboard players display name -1 main_board {"text":"Minutes:", "color":"gray"}
 scoreboard players display name -2 main_board {"text":"Seconds:", "color":"gray"}
 scoreboard players display numberformat -2 main_board styled {"color":"yellow"}
