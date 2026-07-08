@@ -147,11 +147,13 @@ scoreboard objectives add lames dummy
 scoreboard objectives add cache_kill dummy
 scoreboard objectives add trouple dummy
 scoreboard objectives add iron_man dummy
+scoreboard objectives add pvp1.8 dummy
 scoreboard players set 0 cave_finder 1
 scoreboard players set 0 lames 1
 scoreboard players set 0 cache_kill 0
 scoreboard players set 0 trouple 0
 scoreboard players set 0 iron_man 1
+scoreboard players set 0 pvp1.8 0
 scoreboard objectives add cave trigger
 scoreboard objectives add lame dummy
 scoreboard objectives add trigger_lame minecraft.used:minecraft.carrot_on_a_stick
