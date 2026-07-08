@@ -169,3 +169,8 @@ scoreboard objectives add fire_time dummy
 scoreboard objectives add coords_x dummy
 scoreboard objectives add coords_y dummy
 scoreboard objectives add coords_z dummy
+
+#death coords for revive
+scoreboard objectives add death_x dummy
+scoreboard objectives add death_y dummy
+scoreboard objectives add death_z dummy
