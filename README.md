@@ -1,69 +1,38 @@
 # Welcome to **UHC chaos** (V1.4) !
 
-
-
-
-
 ### Overview
-
-
 
 UHC chaos is a UHC (Ultra Hardcore) game mode. Which means that you will not regenerate naturally. To regenerate you need to have the regeneration effect, via golden apples for example.
 
-
-
 The goal is simple: The last player standing wins. But achieving that goal isn't so easy.
-
-
 
 You will have 20 minutes to equip yourself, then 20 minutes to fight until death.
 
-
-
 But remember, this is UHC chaos. Nothing can go to plan. Therefore, every 5 minutes a random event will take place, except at 20 minutes. These events are listed below.
-
-
-
 
 For instructions on how to setup the game, read instruction.txt
 
-
-
-
-
 ### Precisions
 
-
-
-When the game will start, you will be randomly teleported on the map. You will be given some basic stuff such as books, feathers and food. As said before, you will then have 20 minutes to make yourself equipment. Since 20 minutes is a very short time, you can use the trigger cave command (/trigger cave) to teleport in a cave yourself directly below you.
-
-
+When the game will start, you will be randomly teleported on the map. You will be given some basic stuff such as books, feathers and food. As said before, you will then have 20 minutes to make yourself equipment.
 
 At 20 minutes you will be teleported at the surface, and won't be able to go back below y=30 again. Also at 20 minutes, the world border will start shrinking, to reach its minimum size of 3x3 at 40 minutes.
 
-
-
-The ores you mine will drop already smelted, along experience bottles. There is no limit on the stuff you can make. There will be two full heals at 10 and 20 minutes.
-
-
-
 Depending on the host's choice, the Iron Man modifier will be activated or not. Their choice will be communicated when the game starts. If the Iron Man modifier is activated, at 20 minutes all the players who didn't take any damage yet will receive a boost.
 
-
+### Quality of life
 
 If you die before 10 minutes you will be revived.
 
+The ores you mine will drop already smelted, along experience bottles. There is no limit on the stuff you can make. 
 
+There will be two full heals at 10 and 20 minutes.
 
-
+You can use the trigger cave command (/trigger cave) to teleport in a cave yourself directly below you.
 
 ### Blades
 
-
-
 If activated by the host, you will be able to craft a Blade (crafting recipe will be given in the recipe book). This blade will be one of 6 randomly:
-
-
 
 * Red: 10% strenght
 * Blue: 20% speed
@@ -72,21 +41,11 @@ If activated by the host, you will be able to craft a Blade (crafting recipe wil
 * Yellow: saturation
 * Green: No fall
 
-
-
 You can only craft one blade, and it will give you the corresponding effect until it breaks. It will break after you deal 30 hits. I recommend crafting it after 20 minutes, when you are finished caving.
-
-
-
-
 
 ### Events
 
- 
-
 There are 30 events
-
-
 
 * Slime rain | It's all gooey outside -> Slimes rain.
 * Gold rush | Find gold. Quick !! -> Gold is doubled for 4 minutes.
@@ -119,41 +78,20 @@ There are 30 events
 * It's raining cats and dogs | SAVE 'EM !!! -> cats and dogs rain
 * House | Here's your very own structure. -> spawns a random structure (out of 14) on every player
 
-
-
-
-
 ### Shrines
-
-
 
 At 10 minutes, shrines will generate at 250;250 / 250;-250 / -250;250 / -250;-250
 
-
 They each have a 50% chance of spawning, and can be one of 4 kinds:
-
-
 
 * Blue: 4 Diamonds
 * Green: 4 Obsidian, 32 Bottle O' Enchanting, 1 Bookshelf, 20 Lapis Lazuli
 * Red: 2 Healing potions
 * Yellow: 64 Gold
 
-
-
-
-
 ### Conclusion
 
-
-
 Be skilled, be smart, and be the last one standing ! Good luck out there !
-
-
-
-
-
-
 
 ###### ***Credits:***
 
