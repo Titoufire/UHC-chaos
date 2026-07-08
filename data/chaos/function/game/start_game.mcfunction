@@ -18,7 +18,7 @@ effect give @a[tag=play] resistance 1200 0 true
 difficulty easy
 scoreboard players set 0 main_board 62
 scoreboard players set -1 main_board 61
-scoreboard players display name 0 main_board {"text":"          (v1.4)", "color":"gray", "italic":true}
+scoreboard players display name 0 main_board {"text":"          (v1.5)", "color":"gray", "italic":true}
 scoreboard players display name -1 main_board {"text":"Minutes:", "color":"gray"}
 scoreboard players display name -2 main_board {"text":"Seconds:", "color":"gray"}
 scoreboard players display numberformat -2 main_board styled {"color":"yellow"}
@@ -46,3 +46,8 @@ scoreboard players set @a death_time 0
 #iron man activated
 execute if score 0 iron_man matches 1 run tellraw @a {"text":"Iron Man activated", "color":"aqua"}
 scoreboard players set @a[tag=play] dmg_taken 0
+#pvp 1.8 activated
+execute if score 0 pvp1.8 matches 1 run tellraw @a {"text":"1.8 pvp activated", "color":"green"}
+execute if score 0 pvp1.8 matches 1 as @a[tag=play] run attribute @s minecraft:generic.attack_speed base set 1000
+#shield ban warning
+execute if score 0 shields matches 0 run tellraw @a {"text":"Shields are BANNED for this game", "color":"green"}

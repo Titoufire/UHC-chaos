@@ -3,7 +3,7 @@ scoreboard objectives add main_board dummy ["",{"text":"/!\\","bold":true,"under
 scoreboard objectives setdisplay sidebar main_board
 #version
 scoreboard players set 0 main_board 0
-scoreboard players display name 0 main_board {"text":"           (v1.4)", "color":"gray", "italic":true}
+scoreboard players display name 0 main_board {"text":"           (v1.5)", "color":"gray", "italic":true}
 scoreboard players display numberformat 0 main_board blank
 #game will start soon
 scoreboard players set -1 main_board -1
@@ -147,11 +147,15 @@ scoreboard objectives add lames dummy
 scoreboard objectives add cache_kill dummy
 scoreboard objectives add trouple dummy
 scoreboard objectives add iron_man dummy
+scoreboard objectives add pvp1.8 dummy
+scoreboard objectives add shields dummy
 scoreboard players set 0 cave_finder 1
 scoreboard players set 0 lames 1
 scoreboard players set 0 cache_kill 0
 scoreboard players set 0 trouple 0
 scoreboard players set 0 iron_man 1
+scoreboard players set 0 pvp1.8 0
+scoreboard players set 0 shields 1
 scoreboard objectives add cave trigger
 scoreboard objectives add lame dummy
 scoreboard objectives add trigger_lame minecraft.used:minecraft.carrot_on_a_stick
@@ -169,3 +173,8 @@ scoreboard objectives add fire_time dummy
 scoreboard objectives add coords_x dummy
 scoreboard objectives add coords_y dummy
 scoreboard objectives add coords_z dummy
+
+#death coords for revive
+scoreboard objectives add death_x dummy
+scoreboard objectives add death_y dummy
+scoreboard objectives add death_z dummy

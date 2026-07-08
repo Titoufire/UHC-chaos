@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"UHC Chaos (v1.4)","underlined":true,"color":"yellow"},{"text":" >","bold":true,"color":"gray"},{"text":" datapack successfully (re)loaded","color":"gold"}]
+tellraw @a ["",{"text":"UHC Chaos (v1.5)","underlined":true,"color":"yellow"},{"text":" >","bold":true,"color":"gray"},{"text":" datapack successfully (re)loaded","color":"gold"}]
 team add noPvP
 team modify noPvP friendlyFire false
 team modify noPvP collisionRule never
