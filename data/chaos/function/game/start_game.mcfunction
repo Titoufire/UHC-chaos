@@ -46,3 +46,6 @@ scoreboard players set @a death_time 0
 #iron man activated
 execute if score 0 iron_man matches 1 run tellraw @a {"text":"Iron Man activated", "color":"aqua"}
 scoreboard players set @a[tag=play] dmg_taken 0
+#pvp 1.8 activated
+execute if score 0 pvp1.8 matches 1 run tellraw @a {"text":"1.8 pvp activated", "color":"green"}
+execute if score 0 pvp1.8 matches 1 as @a[tag=play] run attribute @s minecraft:generic.attack_speed base set 1000
