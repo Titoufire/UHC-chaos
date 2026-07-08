@@ -164,3 +164,6 @@ execute as @a[tag=play] store result score @s fire_time run data get entity @s F
 
 #revives
 execute as @a[tag=revive] run function chaos:revive
+
+#ban shields
+execute if score 0 shields matches 0 run clear @a shield
