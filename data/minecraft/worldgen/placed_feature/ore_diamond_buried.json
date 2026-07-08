@@ -1,9 +1,9 @@
 {
-  "feature": "minecraft:ore_diamond_large",
+  "feature": "minecraft:ore_diamond_buried",
   "placement": [
     {
-      "chance": 24,
-      "type": "minecraft:rarity_filter"
+      "count": 12,
+      "type": "minecraft:count"
     },
     {
       "type": "minecraft:in_square"
