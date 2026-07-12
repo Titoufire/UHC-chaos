@@ -178,3 +178,6 @@ scoreboard objectives add coords_z dummy
 scoreboard objectives add death_x dummy
 scoreboard objectives add death_y dummy
 scoreboard objectives add death_z dummy
+
+#night vision toggle
+scoreboard objectives add night_vision trigger
