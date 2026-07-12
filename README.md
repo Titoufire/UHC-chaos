@@ -30,6 +30,8 @@ There will be two full heals at 10 and 20 minutes.
 
 You can use the trigger cave command (/trigger cave) to teleport yourself in a cave directly below you.
 
+You can use the trigger night vision command (/trigger night_vision) to toggle a permanent night vision effect.
+
 ### Blades
 
 If activated by the host, you will be able to craft a Blade (crafting recipe will be given in the recipe book). This blade will be one of 6 randomly:
