@@ -51,3 +51,6 @@ execute if score 0 pvp1.8 matches 1 run tellraw @a {"text":"1.8 pvp activated", 
 execute if score 0 pvp1.8 matches 1 as @a[tag=play] run attribute @s minecraft:generic.attack_speed base set 1000
 #shield ban warning
 execute if score 0 shields matches 0 run tellraw @a {"text":"Shields are BANNED for this game", "color":"green"}
+#initialize night vision toggle
+scoreboard players set @a night_vision 0
+scoreboard players enable @a night_vision
