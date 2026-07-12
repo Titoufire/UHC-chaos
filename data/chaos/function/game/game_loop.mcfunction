@@ -63,21 +63,21 @@ execute if score 0 win matches -1 if score 0 no_win matches 0 run scoreboard pla
 execute if score 0 win matches -1 if score 0 no_win matches 0 run function chaos:game/end_game
 
 #tie edge case -> clear items (inv and grd), weapons, no armor, a shield, first to kill the other.
-execute if score 0 win matches -2 run kill @e[type=item]
-execute if score 0 win matches -2 run kill @e[type=arrow]
-execute if score 0 win matches -2 run kill @e[type=wither]
-execute if score 0 win matches -2 run clear @a[scores={death_time=..1}]
-execute if score 0 win matches -2 run tag @a[scores={death_time=..1}] remove dead
-execute if score 0 win matches -2 run tag @a[scores={death_time=..1}] add play
-execute if score 0 win matches -2 run gamemode survival @a[scores={death_time=..1}]
-execute if score 0 win matches -2 run fill -14 150 -14 14 150 14 reinforced_deepslate
-execute if score 0 win matches -2 run worldborder center 0 0
-execute if score 0 win matches -2 run worldborder set 15
-execute if score 0 win matches -2 as @e[tag=Border] at @s run spreadplayers ~ ~ 0 7 under 190 false @a[scores={death_time=..1}]
-execute if score 0 win matches -2 run give @a[scores={death_time=..1}] iron_sword
-execute if score 0 win matches -2 run give @a[scores={death_time=..1}] oak_planks 5
-execute if score 0 win matches -2 run give @a[scores={death_time=..1}] iron_axe
-execute if score 0 win matches -2 run scoreboard players set @a[scores={death_time=..1}] death_time 0
+execute if score 0 win matches -2 if score 0 no_win matches 0 run kill @e[type=item]
+execute if score 0 win matches -2 if score 0 no_win matches 0 run kill @e[type=arrow]
+execute if score 0 win matches -2 if score 0 no_win matches 0 run kill @e[type=wither]
+execute if score 0 win matches -2 if score 0 no_win matches 0 run clear @a[scores={death_time=..1}]
+execute if score 0 win matches -2 if score 0 no_win matches 0 run tag @a[scores={death_time=..1}] remove dead
+execute if score 0 win matches -2 if score 0 no_win matches 0 run tag @a[scores={death_time=..1}] add play
+execute if score 0 win matches -2 if score 0 no_win matches 0 run gamemode survival @a[scores={death_time=..1}]
+execute if score 0 win matches -2 if score 0 no_win matches 0 run fill -14 150 -14 14 150 14 reinforced_deepslate
+execute if score 0 win matches -2 if score 0 no_win matches 0 run worldborder center 0 0
+execute if score 0 win matches -2 if score 0 no_win matches 0 run worldborder set 15
+execute if score 0 win matches -2 if score 0 no_win matches 0 as @e[tag=Border] at @s run spreadplayers ~ ~ 0 7 under 190 false @a[scores={death_time=..1}]
+execute if score 0 win matches -2 if score 0 no_win matches 0 run give @a[scores={death_time=..1}] iron_sword
+execute if score 0 win matches -2 if score 0 no_win matches 0 run give @a[scores={death_time=..1}] oak_planks 5
+execute if score 0 win matches -2 if score 0 no_win matches 0 run give @a[scores={death_time=..1}] iron_axe
+execute if score 0 win matches -2 if score 0 no_win matches 0 run scoreboard players set @a[scores={death_time=..1}] death_time 0
 
 #add death_time
 execute as @a[tag=dead] run scoreboard players add @s death_time 1
@@ -169,3 +169,9 @@ execute as @a[tag=revive] run function chaos:revive
 
 #ban shields
 execute if score 0 shields matches 0 run clear @a shield
+
+#night vision toggle
+execute as @a[scores={night_vision=2..}] run scoreboard players set @s night_vision 0
+scoreboard players enable @a night_vision
+execute as @a[scores={night_vision=1}] run effect give @s night_vision 15 255 true
+execute as @a[scores={night_vision=0}] run effect clear @s night_vision
