@@ -91,12 +91,13 @@ function chaos:trigger_event
 
 #prevent people from going too high
 execute as @a[scores={coords_y=200..}, tag=play] if score 0 time_min matches 1.. run tellraw @s {"text":"You can't go that high.","color":"red"}
-execute as @a[scores={coords_y=200..}, tag=play] if score 0 time_min matches 1.. run spreadplayers 0 0 1 50 under 190 false @s
+execute as @a[scores={coords_y=200..}, tag=play] if score 0 time_min matches 1.. run effect give @s slow_falling 2 0 true
+execute as @a[scores={coords_y=200..}, tag=play] if score 0 time_min matches 1.. at @s run spreadplayers ~ ~ 1 20 under 190 false @s
 
 #prevent people from going too low after 20min
 execute as @a[scores={coords_y=..29}, tag=play] if score 0 time_min matches 20.. run tellraw @s {"text":"You can't go that low.","color":"red"}
 execute as @a[scores={coords_y=..29}, tag=play] if score 0 time_min matches 20.. run effect give @s slow_falling 2 0 true
-execute as @a[scores={coords_y=..29}, tag=play] if score 0 time_min matches 20.. at @s run spreadplayers ~ ~ 1 50 under 190 false @s
+execute as @a[scores={coords_y=..29}, tag=play] if score 0 time_min matches 20.. at @s run spreadplayers ~ ~ 1 20 under 190 false @s
 
 #in-game scoreboard
 #minutes
