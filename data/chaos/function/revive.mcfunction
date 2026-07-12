@@ -14,4 +14,5 @@ kill @e[tag=Reviving]
 scoreboard players set @s death_time 0
 give @s iron_sword
 give @s iron_pickaxe
+effect give @s resistance 10 4 true
 tag @s remove revive
